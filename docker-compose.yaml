@@ -1,0 +1,14 @@
+services:
+  aws-cost-bot:
+    image: aws-cost-bot
+    container_name: aws-cost-discord-bot
+    environment:
+      - DISCORD_WEBHOOK_URL=${DISCORD_WEBHOOK_URL}
+      - TZ=Asia/Seoul
+    restart: always
+    networks:
+      - aws-bot-network
+
+networks:
+  aws-bot-network:
+    driver: bridge
