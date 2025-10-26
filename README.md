@@ -18,16 +18,13 @@ sudo chmod +x /usr/local/lib/docker/cli-plugins/docker-compose
 docker compose version
 ```
 
-### env
-Replace value of DISCORD_WEBHOOK_URL
-```
-sudo vi .env
-```
-
-
 ### Deploy
 ```
 git clone https://github.com/kimjihoon3106/AWS-Cost-Discord-Bot.git
+
+# Replace value of DISCORD_WEBHOOK_URL
+sudo vi .env
+
 docker build -t aws-cost-bot .
 ```
 ```
