@@ -1,5 +1,8 @@
 # AWS-Cost-Discord-Bot
 
+### Enviroment
+* 자신에 계정에 인스턴스 생성해서 아래 진행
+
 ### Install Tools
 ```
 # docker
